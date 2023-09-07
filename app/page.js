@@ -1,5 +1,5 @@
 export default function Home() {
   return (
-    <a>Joemon Mathew</a>
+    <h1>Joemon Mathew</h1>
   )
 }
