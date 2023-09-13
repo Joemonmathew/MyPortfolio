@@ -1,5 +1,11 @@
+import React from "react";
+import MainContent from './components/MainContent/page'
+import Sidebar from "./components/Sidebar/page";
 export default function Home() {
   return (
-    <h1>Joemon Mathew</h1>
+   <div className="flex">
+     <Sidebar />
+    <MainContent />
+   </div>
   )
 }
