@@ -14,7 +14,6 @@ const Sidebar = () => {
         <img src='/images/joemon1.jpg' alt="Image Description" className="w-[10rem] h-[10rem] mx-auto rounded-full " />
         <h3>Joemon Mathew</h3>
       </div>
-      <div></div>
       <ul className='flex flex-col items-center h-full  mr-1 space-y-5 bg-[#020107] box-border '>
         <li className='mt-5'>
           <Link href='/About'
@@ -33,7 +32,7 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link
+          <Link href=''
             onClick={() => handleItemClick('Skills')}
             className={`cursor-pointer px-20 text-xl ${selectedItem === 'Skills' ? 'text-white bg-[#081f2e]' : 'text-gray-300'}`}
           >
@@ -41,7 +40,7 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link
+          <Link href=''
             onClick={() => handleItemClick('Resume')}
             className={`cursor-pointer px-20 text-xl ${selectedItem === 'Resume' ? 'text-white bg-[#081f2e]' : 'text-gray-300'}`}
           >
@@ -49,7 +48,7 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link
+          <Link href=''
             onClick={() => handleItemClick('Blogs')}
             className={`cursor-pointer px-20 text-xl ${selectedItem === 'Blogs' ? 'text-white bg-[#081f2e]' : 'text-gray-300'}`}
           >
@@ -57,7 +56,7 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link
+          <Link href=''
             onClick={() => handleItemClick('Contact')}
             className={`cursor-pointer px-20 text-xl ${selectedItem === 'Contact' ? 'text-white bg-[#081f2e]' : 'text-gray-300'}`}
           >
