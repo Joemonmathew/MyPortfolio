@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MainContent = () => {
+const About = () => {
   return (
     <div className='flex flex-col m-10 items-center space-y-4'> 
       <h1>Hello, I'm Joemon Mathew</h1>
@@ -12,4 +12,4 @@ const MainContent = () => {
   );
 };
 
-export default MainContent;
+export default About;

@@ -1,6 +1,7 @@
 import React from "react";
-import MainContent from './MainContent';
 import Head from "next/head";
+import Work from "./Work";
+import About from "./About";
 
 export default function Home() {
   return (
@@ -8,7 +9,8 @@ export default function Home() {
       <Head>
         <title> Joemon | Front-End Developer</title>
       </Head>
-    <MainContent />
+    <About />
+    <Work />
    </div>
   )
 }

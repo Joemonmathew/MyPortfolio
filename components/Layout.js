@@ -6,11 +6,12 @@ import Sidebar from '../pages/Sidebar';
 function Layout({ children }) {
   return (
     <div>
-      <Sidebar /> {/* Include the Sidebar here */}
-      <main>
+      <Sidebar />
+      <main className='pl-[320px]'>
         {children}
       </main>
     </div>
+    
   );
 }
 

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Link from 'next/link';
 
 const Sidebar = () => {
   const [selectedItem, setSelectedItem] = useState('About');
@@ -16,52 +17,52 @@ const Sidebar = () => {
       <div></div>
       <ul className='flex flex-col items-center h-full  mr-1 space-y-5 bg-[#020107] box-border '>
         <li className='mt-5'>
-          <a
+          <Link href='/About'
             onClick={() => handleItemClick('About')}
             className={`cursor-pointer px-20 text-lg ${selectedItem === 'About' ? 'text-white bg-[#081f2e]' : 'text-gray-300'}`}
           >
             About
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link href='/Work'
             onClick={() => handleItemClick('Work')}
             className={`cursor-pointer px-20 text-xl ${selectedItem === 'Work' ? 'text-white bg-[#081f2e]' : 'text-gray-300'}`}
           >
             Work
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
             onClick={() => handleItemClick('Skills')}
             className={`cursor-pointer px-20 text-xl ${selectedItem === 'Skills' ? 'text-white bg-[#081f2e]' : 'text-gray-300'}`}
           >
             Skills
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
             onClick={() => handleItemClick('Resume')}
             className={`cursor-pointer px-20 text-xl ${selectedItem === 'Resume' ? 'text-white bg-[#081f2e]' : 'text-gray-300'}`}
           >
             Resume
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
             onClick={() => handleItemClick('Blogs')}
             className={`cursor-pointer px-20 text-xl ${selectedItem === 'Blogs' ? 'text-white bg-[#081f2e]' : 'text-gray-300'}`}
           >
             Blogs
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
             onClick={() => handleItemClick('Contact')}
             className={`cursor-pointer px-20 text-xl ${selectedItem === 'Contact' ? 'text-white bg-[#081f2e]' : 'text-gray-300'}`}
           >
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
     </div>
