@@ -27,7 +27,7 @@
     @apply cursor-pointer
   }
   .active {
-    @apply bg-[#081f2e] text-white;
+    @apply bg-primary-blue text-white;
   }
 }
 

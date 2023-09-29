@@ -24,7 +24,7 @@ function Work() {
         {workExperiences.map((experience, index) => (
           <div
             key={index}
-            className="bg-[#081f2e] p-4 shadow rounded "
+            className="bg-primary-blue p-4 shadow rounded "
           >
             <h3>{experience.company}</h3>
             <p>{experience.jobTitle}</p>

@@ -10,7 +10,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className='fixed top-0 left-0 h-screen w-1/5 box-border bg-[#081f2e] '>
+    <div className='fixed top-0 left-0 h-screen w-1/5 box-border bg-primary-blue '>
       <div className='flex-row h-70 text-center my-4'>
         <img src='/images/joemon1.jpg' alt="Image Description" className="w-[10rem] h-[10rem] mx-auto rounded-full " />
         <h3>Joemon Mathew</h3>
