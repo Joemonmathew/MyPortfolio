@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
+import { useRouter } from "next/router";
 
 const Sidebar = () => {
-  const [selectedItem, setSelectedItem] = useState('About');
+  const router = useRouter();
 
-  const handleItemClick = (item) => {
-    setSelectedItem(item);
+  const isActive = (item) => {
+    return router.pathname === item;
   };
 
   return (
@@ -16,50 +17,32 @@ const Sidebar = () => {
       </div>
       <ul className='flex flex-col items-center h-full  mr-1 space-y-5 bg-[#020107] box-border '>
         <li className='mt-5'>
-          <Link href='/About'
-            onClick={() => handleItemClick('About')}
-            className={`cursor-pointer px-20 text-lg ${selectedItem === 'About' ? 'text-white bg-[#081f2e]' : 'text-gray-300'}`}
-          >
+          <Link href='/About' className={isActive('/About') ? 'active' : ''}>
             About
           </Link>
         </li>
         <li>
-          <Link href='/Work'
-            onClick={() => handleItemClick('Work')}
-            className={`cursor-pointer px-20 text-xl ${selectedItem === 'Work' ? 'text-white bg-[#081f2e]' : 'text-gray-300'}`}
-          >
+          <Link href='/Work' className={isActive('/Work') ? 'active' : ''}>
             Work
           </Link>
         </li>
         <li>
-          <Link href=''
-            onClick={() => handleItemClick('Skills')}
-            className={`cursor-pointer px-20 text-xl ${selectedItem === 'Skills' ? 'text-white bg-[#081f2e]' : 'text-gray-300'}`}
-          >
+          <Link href='' className={isActive('') ? 'active' : ''}>
             Skills
           </Link>
         </li>
         <li>
-          <Link href=''
-            onClick={() => handleItemClick('Resume')}
-            className={`cursor-pointer px-20 text-xl ${selectedItem === 'Resume' ? 'text-white bg-[#081f2e]' : 'text-gray-300'}`}
-          >
+          <Link href='' className={isActive('') ? 'active' : ''}>
             Resume
           </Link>
         </li>
         <li>
-          <Link href=''
-            onClick={() => handleItemClick('Blogs')}
-            className={`cursor-pointer px-20 text-xl ${selectedItem === 'Blogs' ? 'text-white bg-[#081f2e]' : 'text-gray-300'}`}
-          >
+          <Link href='' className={isActive('') ? 'active' : ''}>
             Blogs
           </Link>
         </li>
         <li>
-          <Link href=''
-            onClick={() => handleItemClick('Contact')}
-            className={`cursor-pointer px-20 text-xl ${selectedItem === 'Contact' ? 'text-white bg-[#081f2e]' : 'text-gray-300'}`}
-          >
+          <Link href='' className={isActive('') ? 'active' : ''}>
             Contact
           </Link>
         </li>
