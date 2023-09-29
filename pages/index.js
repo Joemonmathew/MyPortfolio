@@ -1,17 +1,16 @@
 import React from "react";
-import MainContent from '../components/MainContent'
-import Sidebar from "../components/Sidebar";
 import Head from "next/head";
+import Work from "./Work";
+import About from "./About";
+
 export default function Home() {
   return (
-   <div className="flex">
+   <div>
       <Head>
         <title> Joemon | Front-End Developer</title>
       </Head>
-      <Sidebar />
-    <MainContent />
-
-     
+    <About />
+    <Work />
    </div>
   )
 }
