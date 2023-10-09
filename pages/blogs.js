@@ -36,7 +36,7 @@ export default function Blog() {
         <h2 className="text-center mb-2">my Blogs</h2>
         <div className="grid grid-cols-1   gap-5 md:grid-cols-2 lg:grid-cols-3">
           {blogPosts.map((blogPost) => (
-            <BlogPost key={blogPost.id} blogPost={blogPost} />
+            <BlogPost key={blogPost.id} {...blogPost} />
           ))}
         </div>
       </main>
