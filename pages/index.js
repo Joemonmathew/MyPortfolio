@@ -3,6 +3,7 @@ import Head from "next/head";
 import Work from "./Work";
 import About from "./About";
 import Blog from "./blogs";
+import Footer from "./Footer";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
     <About />
     <Work />
     <Blog />
+    <Footer />
    </div>
   )
 }
