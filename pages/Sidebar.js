@@ -37,7 +37,7 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link href='' className={isActive('') ? 'active' : ''}>
+          <Link href='/blogs' className={isActive('/blogs') ? 'active' : ''}>
             Blogs
           </Link>
         </li>

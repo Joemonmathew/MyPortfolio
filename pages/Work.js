@@ -19,8 +19,8 @@ const workExperiences = [
 function Work() {
   return (
     <section className="flex flex-col m-10  items-center" id='1'>
-      <h2>Work</h2>
-      <div className="space-y-4 max-w-[800px]">
+      <h2 className='mb-2'>Work</h2>
+      <div className="space-y-4 max-w-[1000px]">
         {workExperiences.map((experience, index) => (
           <div
             key={index}
