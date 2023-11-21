@@ -1,14 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import { useRouter } from "next/router";
 
 const Sidebar = () => {
-  const router = useRouter();
-
-  const isActive = (item) => {
-    return router.pathname === item;
-  };
-
   return (
     <div className='fixed top-0 left-0 h-screen w-1/5 box-border bg-primary-blue '>
       <div className='flex-row h-70 text-center my-4'>
@@ -17,32 +10,32 @@ const Sidebar = () => {
       </div>
       <ul className='flex flex-col items-center h-full  mr-1 space-y-5 bg-[#020107] box-border '>
         <li className='mt-5'>
-          <Link href='/About' className={isActive('/About') ? 'active' : ''}>
+          <Link href='#About' >
             About
           </Link>
         </li>
         <li>
-          <Link href='/Work' className={isActive('/Work') ? 'active' : ''}>
+          <Link href='#Work' >
             Work
           </Link>
         </li>
         <li>
-          <Link href='' className={isActive('') ? 'active' : ''}>
+          <Link href=''>
             Skills
           </Link>
         </li>
         <li>
-          <Link href='' className={isActive('') ? 'active' : ''}>
+          <Link href='' >
             Resume
           </Link>
         </li>
         <li>
-          <Link href='/blogs' className={isActive('/blogs') ? 'active' : ''}>
+          <Link href='#Blogs' >
             Blogs
           </Link>
         </li>
         <li>
-          <Link href='' className={isActive('') ? 'active' : ''}>
+          <Link href='#Contact' >
             Contact
           </Link>
         </li>
