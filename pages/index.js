@@ -5,6 +5,7 @@ import About from "./About";
 import Blog from "./blogs";
 import Footer from "./Footer";
 import Contact from "./contact";
+import MainPage from "./MainPage";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Head>
         <title> Joemon | Front-End Developer</title>
       </Head>
+      <section id="MainPage"><MainPage /></section>
       <section id='About'><About /></section>
       <section id='Work'> <Work /></section>
       <section id='Blogs'><Blog /></section>
