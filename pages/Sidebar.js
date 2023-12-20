@@ -26,7 +26,7 @@ const Sidebar = () => {
         </li>
         <li>
           <Link href='#Contact' >
-            Contact
+            Contact me
           </Link>
         </li>
         <li>
