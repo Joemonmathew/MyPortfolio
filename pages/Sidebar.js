@@ -24,11 +24,11 @@ const Sidebar = () => {
             Skills
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link href='' >
             Resume
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link href='#Blogs' >
             Blogs
