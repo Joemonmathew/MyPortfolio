@@ -27,6 +27,8 @@ const Sidebar = () => {
         <li>
           <Link href='#Contact' >
             Contact me
+          </Link>
+        </li>
         <li>
           <Link href='https://github.com/Joemonmathew' >
           <img src='/images/github.png' className='w-10 h-10'/>
