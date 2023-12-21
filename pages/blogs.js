@@ -28,7 +28,7 @@ const blogPosts = [
 
 export default function Blog() {
   return (
-    <section className="flex flex-col m-10  items-center  ">
+    <section className="flex flex-col m-10  items-center lg:pl-[320px] ">
       <Head>
         <title>My Blog</title>
       </Head>

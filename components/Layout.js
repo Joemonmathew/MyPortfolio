@@ -2,12 +2,14 @@
 
 import React from 'react';
 import Sidebar from '../pages/Sidebar';
+import Navbar from '@/pages/navbar';
 
 function Layout({ children }) {
   return (
     <div>
+      <Navbar />
       <Sidebar />
-      <main className='pl-[320px]'>
+      <main className=''>
         {children}
       </main>
     </div>
@@ -16,3 +18,4 @@ function Layout({ children }) {
 }
 
 export default Layout;
+// lg:pl-[320px]
