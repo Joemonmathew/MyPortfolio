@@ -3,8 +3,9 @@ import React from 'react';
 const MainPage = () => {
   return (
     <section className='flex flex-col m-0 h-screen justify-center items-center bg-cover bg-center' style={{ backgroundImage: 'url("/images/black_bg.jpg")' }} >
-      <div className='max-w-[1000px] flex flex-col items-center space-y-4'>
-        <h1>Hello, I'm Joemon Mathew</h1>
+      <div className='max-w-[1000px] flex flex-col items-center space-y-4 lg:pl-[320px]'>
+        <h1>Hello, </h1>
+        <h1>I'm Joemon Mathew</h1>
         <h3 className='text-center'>Frontend Developer </h3>
         <a
           href='/docs/Joemon_mathew.pdf'  // Replace with the actual path to your CV file

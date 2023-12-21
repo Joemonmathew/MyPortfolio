@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Sidebar = () => {
   return (
-    <div className='fixed top-0 left-0 h-screen w-1/5 box-border bg-primary-blue '>
+    <div className='hidden sm:hidden md:hidden lg:block fixed top-0 left-0 h-screen w-1/5 box-border bg-primary-blue '>
       <div className='flex-row h-76 text-center my-4'>
         <img src='/images/joemon1.jpg' alt="Image Description" className="w-[12rem] h-[12rem] mx-auto rounded-full " />
         <h3 className='mt-2'>Joemon Mathew</h3>

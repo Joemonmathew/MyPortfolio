@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section className='flex flex-col m-10 items-center'>
+    <section className='flex flex-col m-10 items-center lg:pl-[320px]'>
       <div className='max-w-[1000px]'>
       <h2 className='mb-2 text-center'>About me</h2>
         <p className=''>
